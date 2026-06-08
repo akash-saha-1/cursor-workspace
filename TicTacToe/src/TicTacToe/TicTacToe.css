@@ -1,0 +1,52 @@
+:root {
+    --primary: #2c5cc5;
+    --win-bg: #d4edda;
+    --border: #ccc;
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.ttt {
+    display: flex;
+    flex-direction: column; /* check here once by flipping*/
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    gap: 6px;
+}
+
+.square {
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    background: #fff;
+    cursor: pointer;
+}
+
+.square-win {
+    background: var(--win-bg);
+}
+.square:disabled {
+    cursor: not-allowed;
+}
+
+.reset-btn {
+    padding: 0.6rem 1.6rem;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+}

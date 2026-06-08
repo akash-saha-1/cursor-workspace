@@ -1,0 +1,76 @@
+/* AuthForm.css */
+:root {
+  --primary: #2c5cc5;
+  --border:  #d0d5dd;
+  --err-clr: #c0392b;
+  --err-bg:  #fdecea;
+  --radius:  8px;
+}
+
+body { font-family: system-ui, sans-serif; }
+
+.auth-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.steps { display: flex; align-items: center; gap: 0.5rem; }
+.dot {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700;
+}
+.dot--on { background: var(--primary); color: #fff; }
+.line    { width: 48px; height: 2px; background: var(--border); }
+
+.auth-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.email-tag { font-size: 0.9rem; background: #f5f7fa; padding: 0.5rem 0.75rem; border-radius: var(--radius); color: #555; }
+.field { display: flex; flex-direction: column; gap: 0.4rem; }
+.field label { font-weight: 500; }
+
+.field input {
+  padding: 0.65rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  outline: none;
+}
+.field input.input--err { border-color: var(--err-clr); background: var(--err-bg); }
+.field input:focus-visible { outline: 3px solid var(--primary); border-color: var(--primary); }
+
+.err { font-size: 0.85rem; color: var(--err-clr); font-weight: 500; }
+
+.row { display: flex; justify-content: space-between; gap: 0.75rem; }
+
+.btn-primary   { background: var(--primary); color: #fff; border: none; padding: 0.65rem 1.4rem; border-radius: var(--radius); cursor: pointer; flex: 1; font-size: 1rem; }
+.btn-secondary { background: transparent; border: 1.5px solid var(--border); padding: 0.65rem 1.4rem; border-radius: var(--radius); cursor: pointer; font-size: 1rem; }
+
+button:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+
+.success {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 0.75rem;
+  background: #fff; padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.success span { font-size: 3rem; }
