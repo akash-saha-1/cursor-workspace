@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "vscode-edge-devtools.debug",
+      "request": "launch",
+      "name": "Open in Edge (inside Cursor)",
+      "file": "${workspaceFolder}/index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "vscode-edge-devtools.debug",
+      "request": "launch",
+      "name": "Open with Live Server in Edge",
+      "url": "http://127.0.0.1:5500/index.html",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

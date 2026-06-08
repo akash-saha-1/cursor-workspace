@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.NoBrowser": true,
+  "liveServer.settings.port": 5500,
+  "vscode-edge-devtools.headless": true,
+  "vscode-edge-devtools.defaultEntrypoint": "index.html",
+  "vscode-edge-devtools.webRoot": "${workspaceFolder}"
+}

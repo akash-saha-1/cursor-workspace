@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modal Window</title>
+        <link rel="stylesheet" href="modal.css">
+    </head>
+    <body>
+        <main class="page">
+            <button id="openBtn" class="btn btn-primary">Open Modal</button>
+        </main>
+        <dialog id="modal" class="modal" aria-modal="true">
+            <header class="modal-header">
+                <h2 id="modalTitle">Modal Confirmation</h2>
+                <button id="closebtn" class="btn btn-secondary">X</button>
+            </header>
+            <p class="modal-body">Are you sure you want to proceed?</p>
+            <footer class="modal-footer">
+                <button id="cancelBtn" class="btn btn-secondary">Cancel</button>
+                <button id="confirmBtn" class="btn btn-primary">Confirm</button>
+            </footer>
+        </dialog>
+
+        <script src="modal.js"></script>
+    </body>
+</html>
